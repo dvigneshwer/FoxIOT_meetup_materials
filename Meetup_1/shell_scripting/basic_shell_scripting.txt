@@ -1,0 +1,115 @@
+#Basic shell scripting commands
+
+cd - Change current directory
+
+cd                     # go to home directory
+cd ~/papers            # go to /home/user/papers
+
+
+cp -copy
+
+cp file1 file2                      # copy file1 to file2
+cp file1 directory                  # copy file1 into directory
+cp file1 file2 file3 ... directory  # copy files into directory
+
+
+cat - Send a file to the screen in one go. Useful for piping to other programs
+
+cat file1                       # list file1 to screen
+cat file1 file2 file3 > outfile # add files together into outfile
+
+
+mv - move
+
+mv location _1 new_location_1 #renaming
+
+
+ls - Show lists of files or information on the files
+
+ls file     # does the file exist?
+ls -l file  # show information about the file
+
+
+nano - very simple text editor.
+nano file_name #opens the file in a editor
+
+
+pwd - Show current working directory
+
+pwd
+/home/jss/writing/lecture
+
+
+rm - Delete (remove) files
+
+rm file1     # delete a file (use -i to ask whether sure)
+rm -r dir1   # delete a directory and everything in it (CARE!)
+rm -rf dir1  # like above, but don't ask if we have a -i alias
+
+
+#search commands
+
+grep "phrase to search"
+
+
+#To find an extension
+
+find location  -name "*.jpg" 
+
+
+#To count lines
+
+wc -l
+
+
+#Cut command 
+
+cut -d "delimiter" -f part_number
+
+
+#sed command
+
+sed -i 's/foo/bar/g' # replaces foo with bar
+
+
+#Conditionals, if/then/elif
+
+#check a condition
+if condition
+then
+	statement1
+	statement2
+	..........
+fi
+
+#fail command
+if condition
+then
+	statement1
+	statement2
+	..........
+else
+	statement3
+fi
+
+
+#check multiple condition
+if condition1
+then
+	statement1
+	statement2
+	..........
+elif condition2
+then
+	statement3
+	statement4
+	........    
+elif condition3
+then
+	statement5
+	statement6
+	........    
+
+
+fi
+

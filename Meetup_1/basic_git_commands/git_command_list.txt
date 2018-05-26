@@ -1,0 +1,85 @@
+
+#To create a new git repository.
+
+git init
+
+
+#Clone a project
+
+git clone path_of_project
+
+
+
+#make a modification
+
+git add filename
+git add *
+
+
+
+#See status of addition
+
+git status
+
+
+
+#see which branch your are in
+
+git branch
+
+
+
+#Commit your change
+
+git commit -m "description of the change"
+
+
+
+#Push your code
+
+git push origin master
+
+
+
+#Branching 
+
+#To create a new branch 
+
+git checkout -b new_branch
+
+
+
+#To change branch
+
+git checkout master
+
+
+
+#Delete the branch again
+
+git branch -d new_branch
+
+
+
+#Push the change made in the branch
+
+git push origin <branch>
+
+
+
+#Update the repository
+
+git pull
+
+
+
+#To merge your branch to master
+
+git merge <branch>
+
+
+
+#To completely reset your repo
+
+git fetch origin
+git reset --hard origin/master
